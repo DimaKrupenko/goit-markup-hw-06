@@ -663,13 +663,18 @@ color: var(--accent-color);
     left: 16px;
     color: rgba(255, 255, 255, 0.6);
 }
+
+.footer-label:focus-within .text-footer {
+    transform: translateY(-35px);
+    color: var(--accent-color);
+}
 .button-footer {
     width: 200px;
     height: 50px;
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-   
+    border: 0;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
