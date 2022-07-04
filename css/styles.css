@@ -666,10 +666,15 @@ color: var(--accent-color);
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-label:focus-within .text-footer {
+.footer-label:focus-within .text-footer{
     transform: translateY(-35px);
     color: var(--accent-color);
 }
+.footer-input:not(:placeholder-shown) + .text-footer{
+    transform: translateY(-35px);
+    color: var(--accent-color);
+}
+
 .button-footer {
     width: 200px;
     height: 50px;
