@@ -52,17 +52,17 @@
                             <use href="./image/symbol-defs.svg#icon-close"></use>
                         </svg>
                     </button>
-                    <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+                    <strong class="modal-title">Оставьте свои данные, мы вам перезвоним</strong>
                     <form class="modal-form">
-                        <div class="container-input" >
-                            <h3 class="title-input">Имя</h3>
+                        <div class="container-input" role="group" >
+                            <p class="title-input">Имя</p>
                             <label class="input-label">
                                 <input type="text" class="name-input">
                                 <svg width="18" height="18" class="icon-input"><use href="./image/symbol-defs.svg#icon-person-black"></use></svg>
                             </label>
                         </div>
-                        <div class="container-input">
-                            <h3 class="title-input">Телефон</h3>
+                        <div class="container-input" role="group">
+                            <p class="title-input">Телефон</p>
                             <label class="input-label">
                                 <input type="text" class="name-input">
                                 <svg width="18" height="18" class="icon-input">
@@ -70,8 +70,8 @@
                                 </svg>
                             </label>
                         </div>
-                        <div class="container-input">
-                            <h3 class="title-input">Почта</h3>
+                        <div class="container-input" role="group">
+                            <p class="title-input">Почта</p>
                             <label class="input-label">
                                 <input type="text" class="name-input">
                                 <svg width="18" height="18" class="icon-input">
@@ -79,14 +79,21 @@
                                 </svg>
                             </label>
                         </div>
-                        <div class="container-input">
-                            <h3 class="title-input">Комментарий</h3>
+                        <div class="container-input" role="group">
+                            <p class="title-input">Комментарий</p>
                             <label class="coment-label">
-                                <input type="text" class="coment-input" placeholder="Введите текст">
+                                <textarea rows="10" class="coment-input" placeholder="Введите текст"></textarea>
                                 
                             </label>
                         </div>
+                        <div class="treaty" role="group">
+                            <label>
+                                <input type="checkbox" class="treaty-input">
+                                <p class="chekbox-text">Соглашаюсь с рассылкой и принимаю<a href="" class="treaty-link"> Условия договора</a></p>
+                            </label>
+                        </div>
                     </form>
+                    <button type="submit" class="form-button">Отправить</button>
                 </div>
             </div>
         </section>
