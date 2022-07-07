@@ -699,7 +699,7 @@ color: var(--accent-color);
 }
 
 .icon-send {
-    padding-left: 10px;
+    margin-left: 10px;
 }
 
 
@@ -811,17 +811,17 @@ color: var(--accent-color);
 .input-label {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+        align-items: center;
 }
 
 .icon-input {
     position: absolute;
-    top: 11px;
-    left: 12px;
+    margin-left: 12px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .name-input {
-    width: 448px;
+    width: 100%;
     height: 40px;
     padding-left: 42px;
     padding-top: 12px;
@@ -839,7 +839,7 @@ color: var(--accent-color);
 }
 
 .coment-input {
-    width: 448px;
+    width: 100%;
     height: 120px;
     padding: 12px 16px;
     cursor: pointer;
@@ -870,12 +870,15 @@ color: var(--accent-color);
     margin-bottom: 30px;
 }
 
-.treaty-input {
-    width: 16px;
-    height: 15px;
-    background-color: #212121;
+.checkbox-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.chekbox-text {
+.treaty-input {
+    appearance: none;
+}
+.checkbox-text {
     display: inline-block;
     font-family: 'Roboto';
     font-style: normal;
@@ -884,6 +887,24 @@ color: var(--accent-color);
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
+    margin-left: 7px;
+}
+
+.icon-checkbox {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid rgba(33, 33, 33, 1);
+    border-radius: 2px;
+    transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+.treaty-input:checked + .icon-checkbox {
+background-image: url(../image/icon\ check.svg);
+background-color: var(--accent-color);
+border-color: var(--accent-color);
+background-repeat: no-repeat;
 }
 
 .treaty-link {
